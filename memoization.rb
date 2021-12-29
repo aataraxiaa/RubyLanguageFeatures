@@ -1,6 +1,8 @@
 # Source: https://www.honeybadger.io/blog/ruby-rails-memoization/
-# Put simply, memoization is saving a method's return value so it does not have to be recomputed each time
-# Uses or-equals operator: ||=
+# Takeaways
+# 1. Put simply, memoization is saving a method's return value so it 
+# does not have to be recomputed each time
+# 2. Uses or-equals operator: ||=
 
 class Memoization
 

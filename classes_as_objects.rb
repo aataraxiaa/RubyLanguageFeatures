@@ -20,7 +20,7 @@ puts "MyClass also has access to all methods declared on Module, Object & BasicO
 # Classes are special objects that have the power to spawn new objects
 puts "\n# Classes are special objects that have the power to spawn new objects"
 instance = MyClass.new
-puts "instance has a class type #{instance.class}"
+puts "instance has a class type of #{instance.class}"
 puts "instance has a superclass type of #{instance.class.superclass}"
 puts "instance has it's own defined methods, such as hi which results in #{instance.hi}"
 puts "instance also has access to all methods declared on Object & BasicObject, making a total of #{instance.public_methods.count}"

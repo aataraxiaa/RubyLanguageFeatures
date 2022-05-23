@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 # Development and Test Gems
 group :development do
-    gem 'solargraph'
+  gem 'solargraph'
+  gem 'test-unit'
 end
 

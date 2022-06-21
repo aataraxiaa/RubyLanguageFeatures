@@ -1,7 +1,14 @@
 # Source: https://dmitrytsepelev.dev/attr-accessor-in-ruby
 # Takeaways
-# 1. attr_accessor is a method that sits in the singleton class and, 
+# 1. attr_accessor is a method that sits in the singleton class and,
 # when called, defines methods dynamically
+# 2. Using a benchmark to compare attr_accessor with methods written by hand, we see that
+# writer is 34% faster, while reader shows 18% better performance
+
+# 1. attr_accessor is a method that sits in the singleton class and,
+# when called, defines methods dynamically
+puts 'attr_accessor is a method that sits in the singleton class and,
+# when called, defines methods dynamically'
 
 # Custom Attribute Accessor
 module MyAttrAccessor
@@ -35,6 +42,9 @@ end
 
 Object.extend(MyAttrAccessor)
 
+# 2. Using a benchmark to compare attr_accessor with methods written by hand, we see that
+# writer is 34% faster, while reader shows 18% better performance
+puts "\n Benchmark to compare attr_accessor with methods written by hand"
 require "benchmark"
 
 class NativeAccessor

@@ -1,6 +1,6 @@
 # Source: https://st0012.dev/from-byebug-to-ruby-debug
 # Takeaways
-# See comparison in source
+# Run the program and then use the source material to compare commands and features
 
 require 'byebug'
 require 'debug'
